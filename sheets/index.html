@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>[BRAND] Flight Systems — Print Sheets</title>
+<style>
+  :root { --ink:#12151c; --steel:#5c6675; --orange:#e8481c; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:"Helvetica Neue",Arial,sans-serif; background:#eceef1; color:var(--ink);
+    min-height:100vh; display:flex; align-items:center; justify-content:center; padding:40px; }
+  .wrap { max-width:640px; }
+  .eyebrow { font-family:"Courier New",monospace; font-size:11px; letter-spacing:0.2em;
+    text-transform:uppercase; color:var(--orange); }
+  h1 { font-family:"Arial Narrow",Arial,sans-serif; font-stretch:condensed; font-weight:700;
+    font-size:44px; text-transform:uppercase; margin:8px 0 6px; }
+  p { color:var(--steel); line-height:1.55; margin-bottom:24px; }
+  .cards { display:grid; gap:14px; }
+  a.card { display:flex; justify-content:space-between; align-items:center; text-decoration:none;
+    color:inherit; background:#fff; border:1.5px solid var(--ink); padding:18px 20px; }
+  a.card:hover { background:#fff7f4; }
+  .card b { font-size:17px; } .card small { color:var(--steel); display:block; margin-top:3px; }
+  .go { font-family:"Arial Narrow",Arial,sans-serif; font-stretch:condensed; font-weight:700;
+    text-transform:uppercase; color:var(--orange); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">[BRAND] Flight Systems · Print collateral</div>
+    <h1>Helmet sales sheets</h1>
+    <p>Print-ready one-pagers for the operator and EMS outreach. Open a sheet, then
+      Print (Ctrl/Cmd-P) → Save as PDF, US-Letter.</p>
+    <div class="cards">
+      <a class="card" href="sell-sheet.html"><span><b>Sell sheet</b><small>Leave-behind / mailer — the pitch on one page</small></span><span class="go">Open →</span></a>
+      <a class="card" href="spec-sheet.html"><span><b>Spec sheet</b><small>Technical data one-pager for procurement</small></span><span class="go">Open →</span></a>
+    </div>
+  </div>
+</body>
+</html>

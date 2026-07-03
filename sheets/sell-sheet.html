@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AERO-1 Flight Helmet — Sell Sheet</title>
+<style>
+  /* Data-plate aesthetic: the leave-behind reads like the riveted spec placard
+     bolted to an airframe. Ink-efficient for office printers — white stock, one
+     rescue-orange accent, stamped monospace part numbers. Swap BRAND + specs. */
+  :root {
+    --paper: #ffffff;
+    --ink: #12151c;
+    --steel: #5c6675;
+    --hair: #c3c8d0;
+    --orange: #e8481c;
+    --orange-ink: #b8360f;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    background: #4a4f57;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    padding: 24px;
+  }
+  .sheet {
+    width: 8.5in; min-height: 11in; margin: 0 auto; background: var(--paper);
+    padding: 0.55in 0.6in; position: relative;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+    display: flex; flex-direction: column;
+  }
+  /* riveted corners — the signature placard detail */
+  .rivet { position: absolute; width: 9px; height: 9px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 30%, #eceef1, var(--steel));
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.25); }
+  .rivet.tl { top: 0.28in; left: 0.28in; } .rivet.tr { top: 0.28in; right: 0.28in; }
+  .rivet.bl { bottom: 0.28in; left: 0.28in; } .rivet.br { bottom: 0.28in; right: 0.28in; }
+
+  .plate-head { display: flex; justify-content: space-between; align-items: baseline;
+    font-family: "Courier New", ui-monospace, monospace; font-size: 10px;
+    letter-spacing: 0.14em; color: var(--steel); text-transform: uppercase; }
+  .brand { font-weight: 700; color: var(--ink); }
+
+  .title { font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
+    font-weight: 700; font-stretch: condensed; font-size: 62px; line-height: 0.92;
+    letter-spacing: -0.01em; text-transform: uppercase; margin-top: 14px; }
+  .title small { display: block; font-size: 15px; letter-spacing: 0.32em;
+    color: var(--orange-ink); font-weight: 700; margin-top: 8px; }
+
+  /* hazard stripe */
+  .hazard { height: 10px; margin: 16px 0 20px;
+    background: repeating-linear-gradient(-45deg, var(--orange) 0 14px, var(--ink) 14px 28px); }
+
+  .lede { font-size: 15.5px; line-height: 1.5; color: #2a2f3a; max-width: 6.4in; }
+  .lede b { color: var(--ink); }
+
+  .hero { margin: 22px 0; padding: 18px 22px; border: 1.5px solid var(--ink);
+    display: flex; align-items: center; gap: 20px; }
+  .hero-fig { font-family: "Arial Narrow", Arial, sans-serif; font-weight: 700;
+    font-stretch: condensed; font-size: 52px; color: var(--orange); line-height: 1; }
+  .hero-txt { font-size: 14px; line-height: 1.45; }
+  .hero-txt b { font-size: 16px; }
+
+  .cols { display: grid; grid-template-columns: 1.15fr 1fr; gap: 26px; margin-top: 6px; }
+  .kicker { font-family: "Courier New", monospace; font-size: 10.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--orange-ink); border-bottom: 1.5px solid var(--ink);
+    padding-bottom: 5px; margin-bottom: 12px; font-weight: 700; }
+
+  .spec { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .spec td { padding: 6px 0; border-bottom: 1px solid var(--hair); vertical-align: top; }
+  .spec td:first-child { font-family: "Courier New", monospace; font-size: 10.5px;
+    letter-spacing: 0.1em; text-transform: uppercase; color: var(--steel); width: 40%; }
+  .spec td:last-child { font-weight: 600; }
+
+  .wins { list-style: none; font-size: 13.5px; line-height: 1.5; }
+  .wins li { padding-left: 20px; position: relative; margin-bottom: 10px; }
+  .wins li::before { content: "▸"; position: absolute; left: 0; color: var(--orange);
+    font-weight: 700; }
+  .wins b { display: block; }
+
+  .fit { margin-top: 22px; font-family: "Courier New", monospace; font-size: 11px;
+    letter-spacing: 0.08em; color: var(--steel); }
+  .fit b { color: var(--ink); }
+
+  .foot { margin-top: auto; padding-top: 18px; border-top: 2px solid var(--ink);
+    display: flex; justify-content: space-between; align-items: flex-end; }
+  .cta { font-family: "Arial Narrow", Arial, sans-serif; font-stretch: condensed;
+    font-weight: 700; font-size: 22px; text-transform: uppercase; }
+  .cta span { color: var(--orange-ink); }
+  .contact { font-size: 12px; line-height: 1.5; text-align: right; color: #2a2f3a; }
+  .contact b { color: var(--ink); }
+
+  @media print {
+    body { background: #fff; padding: 0; }
+    .sheet { box-shadow: none; width: auto; min-height: auto; }
+    @page { size: Letter; margin: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <span class="rivet tl"></span><span class="rivet tr"></span>
+    <span class="rivet bl"></span><span class="rivet br"></span>
+
+    <div class="plate-head">
+      <span>P/N&nbsp;&nbsp;HB-AERO-01 &nbsp;·&nbsp; REV A</span>
+      <span class="brand">[BRAND] FLIGHT SYSTEMS</span>
+    </div>
+
+    <h1 class="title">Aero-1
+      <small>ROTOR-CREW FLIGHT HELMET</small></h1>
+
+    <div class="hazard"></div>
+
+    <p class="lede">Purpose-built head protection for the people who fly your
+      aircraft — <b>pilots, flight nurses, and paramedics</b>. Engineered for the
+      rotor-wing mission: night-vision goggle ops, sustained comms, and the weight
+      budget of a 12-hour shift.</p>
+
+    <div class="hero">
+      <div class="hero-fig">−22%</div>
+      <div class="hero-txt"><b>Lighter on the neck.</b><br />
+        A carbon-composite shell trims fatigue over long EMS and patrol legs —
+        where a heavy helmet is the difference crews actually feel.</div>
+    </div>
+
+    <div class="cols">
+      <div>
+        <div class="kicker">Spec Plate</div>
+        <table class="spec">
+          <tr><td>Model</td><td>AERO-1</td></tr>
+          <tr><td>Shell</td><td>Carbon / aramid composite</td></tr>
+          <tr><td>Weight</td><td>3.1 lb (1.40 kg), NVG-ready</td></tr>
+          <tr><td>Optics mount</td><td>Universal NVG shroud, spec-compatible</td></tr>
+          <tr><td>Comms</td><td>Dual-visor, integrated headset cavity</td></tr>
+          <tr><td>Sizes</td><td>XS–XL · custom liner fitting</td></tr>
+          <tr><td>Standards</td><td>Impact + retention tested to aviation spec</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="kicker">Why crews pick it</div>
+        <ul class="wins">
+          <li><b>NVG-ready out of the box</b>Shroud and c-of-g tuned for goggles, not retrofitted.</li>
+          <li><b>Quiet at altitude</b>Sealed ear domes cut rotor and wind noise for clearer comms.</li>
+          <li><b>Fleet-friendly</b>Standard parts and liners — one spares kit covers the whole roster.</li>
+          <li><b>Serviceable</b>Field-replaceable visors, liners, and comms. No return-to-depot.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="fit">FITTED FOR: &nbsp; <b>AIR-MEDICAL / EMS</b> &nbsp;·&nbsp;
+      <b>LAW ENFORCEMENT AVIATION</b> &nbsp;·&nbsp; <b>UTILITY &amp; TOUR</b> &nbsp;·&nbsp;
+      <b>FLIGHT TRAINING</b></p>
+
+    <div class="foot">
+      <div class="cta">Outfit your roster —<br /><span>request a fleet quote.</span></div>
+      <div class="contact">
+        <b>[BRAND] Flight Systems</b><br />
+        sales@[brand].com &nbsp;·&nbsp; (000) 000-0000<br />
+        [brand].com/fleet
+      </div>
+    </div>
+  </div>
+</body>
+</html>

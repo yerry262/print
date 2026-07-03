@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AERO-1 Flight Helmet — Spec Sheet</title>
+<style>
+  :root { --ink:#12151c; --steel:#5c6675; --hair:#c3c8d0; --orange:#e8481c; --orange-ink:#b8360f; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background:#4a4f57; color:var(--ink); font-family:"Helvetica Neue",Arial,sans-serif;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact; padding:24px; }
+  .sheet { width:8.5in; min-height:11in; margin:0 auto; background:#fff;
+    padding:0.55in 0.6in; box-shadow:0 12px 40px rgba(0,0,0,0.4); }
+  .head { display:flex; justify-content:space-between; align-items:baseline;
+    font-family:"Courier New",monospace; font-size:10px; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--steel); border-bottom:2px solid var(--ink); padding-bottom:8px; }
+  .head b { color:var(--ink); }
+  h1 { font-family:"Arial Narrow",Arial,sans-serif; font-stretch:condensed; font-weight:700;
+    font-size:40px; text-transform:uppercase; margin:16px 0 4px; }
+  .sub { color:var(--orange-ink); font-family:"Courier New",monospace; font-size:11px;
+    letter-spacing:0.24em; text-transform:uppercase; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:0 34px; margin-top:24px; }
+  .kicker { font-family:"Courier New",monospace; font-size:10.5px; letter-spacing:0.16em;
+    text-transform:uppercase; color:var(--orange-ink); font-weight:700;
+    border-bottom:1.5px solid var(--ink); padding-bottom:5px; margin:18px 0 10px; }
+  table { width:100%; border-collapse:collapse; font-size:12.5px; }
+  td { padding:6px 0; border-bottom:1px solid var(--hair); vertical-align:top; }
+  td:first-child { font-family:"Courier New",monospace; font-size:10px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--steel); width:44%; }
+  td:last-child { font-weight:600; }
+  .note { margin-top:26px; font-size:11px; line-height:1.5; color:var(--steel);
+    border-top:1px solid var(--hair); padding-top:12px; }
+  @media print { body{background:#fff;padding:0;} .sheet{box-shadow:none;width:auto;min-height:auto;} @page{size:Letter;margin:0.4in;} }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <div class="head"><span>P/N <b>HB-AERO-01</b> · REV A · TECHNICAL DATA</span><span><b>[BRAND] FLIGHT SYSTEMS</b></span></div>
+    <h1>Aero-1 Flight Helmet</h1>
+    <div class="sub">Rotor-crew · NVG-ready · EMS / patrol / utility</div>
+
+    <div class="grid">
+      <div>
+        <div class="kicker">Shell &amp; protection</div>
+        <table>
+          <tr><td>Shell material</td><td>Carbon / aramid composite</td></tr>
+          <tr><td>Weight (M, no NVG)</td><td>3.1 lb / 1.40 kg</td></tr>
+          <tr><td>Weight (M, w/ NVG mount)</td><td>3.3 lb / 1.50 kg</td></tr>
+          <tr><td>Retention</td><td>Dual-point chin, quick-release</td></tr>
+          <tr><td>Liner</td><td>Multi-density EPS + fit pads</td></tr>
+          <tr><td>Impact / retention</td><td>Tested to aviation helmet spec</td></tr>
+        </table>
+        <div class="kicker">Optics &amp; visor</div>
+        <table>
+          <tr><td>NVG shroud</td><td>Universal dovetail, spec-compatible</td></tr>
+          <tr><td>C-of-G adjust</td><td>Rear counterweight channel</td></tr>
+          <tr><td>Visors</td><td>Clear + tinted, field-swappable</td></tr>
+        </table>
+      </div>
+      <div>
+        <div class="kicker">Comms</div>
+        <table>
+          <tr><td>Headset</td><td>Integrated cavity, ANR-ready</td></tr>
+          <tr><td>Ear domes</td><td>Sealed, passive noise attenuation</td></tr>
+          <tr><td>Mic</td><td>Boom, left/right swappable</td></tr>
+          <tr><td>Connector</td><td>Standard aviation plug options</td></tr>
+        </table>
+        <div class="kicker">Fit &amp; sizing</div>
+        <table>
+          <tr><td>Sizes</td><td>XS – XL</td></tr>
+          <tr><td>Custom fitting</td><td>Liner kit for individual crew</td></tr>
+          <tr><td>Colors</td><td>Matte black, white, hi-vis</td></tr>
+        </table>
+        <div class="kicker">Fleet &amp; service</div>
+        <table>
+          <tr><td>Spares</td><td>Visors, liners, comms — field-replaceable</td></tr>
+          <tr><td>Warranty</td><td>Shell + electronics coverage</td></tr>
+          <tr><td>Volume</td><td>Fleet pricing on roster orders</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <p class="note">Placeholder specifications for layout — replace bracketed values and figures
+      with verified product data before distribution. Contact: sales@[brand].com · (000) 000-0000.</p>
+  </div>
+</body>
+</html>
