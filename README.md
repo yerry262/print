@@ -7,6 +7,14 @@ the operator/EMS lead list).
 Everything here is self-contained HTML that prints cleanly to US-Letter PDF —
 no design software needed. Open a sheet in Chrome and use **Print → Save as PDF**.
 
+**🌐 Live sheets: [https://yerry262.github.io/print/](https://yerry262.github.io/print/)**
+
+## Tech Stack
+
+- **Plain HTML + print CSS** (`@media print`, `@page`) — fully self-contained, no build step
+- **Python 3 (stdlib)** — `serve.py` local preview server
+- **GitHub Pages** — deployed via `.github/workflows/deploy-pages.yml`
+
 ## Layout
 
 - `sheets/sell-sheet.html` — one-page product sell sheet (leave-behind / mailer)
